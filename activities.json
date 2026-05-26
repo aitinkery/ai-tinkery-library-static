@@ -119,7 +119,7 @@
   },
   {
     "id": "activity-06",
-    "name": "Graidiants",
+    "name": "Gradiants",
     "type": "Slide Deck",
     "time": "30 minutes",
     "time_minutes": 30,
@@ -218,7 +218,7 @@
     "audience": [
       "Student"
     ],
-    "description": "AI-powered game creation tools allow you to build playable educational games by describing what you want in plain language. Platforms like Rosebud AI, Google Gemini Canvas, and Lovable lower the barrier to game development—no coding required. You can create quiz games, interactive simulations, choose-your-own-adventure stories, and more.",
+    "description": "AI-powered game creation tools allow you to build playable educational games by describing what you want in plain language. Platforms like Rosebud AI, Google Gemini Canvas, and Lovable lower the barrier to game development\u2014no coding required. You can create quiz games, interactive simulations, choose-your-own-adventure stories, and more.",
     "link": "https://docs.google.com/document/d/1a_45vs8vzJDisMhxZpb9EHdOZ3vvFig7/copy",
     "category": "Shape AI",
     "keywords": [
@@ -817,7 +817,7 @@
     "audience": [
       "Student"
     ],
-    "description": "In this lesson, we’ll introduce students to the skill of lateral reading (Wineburg & McGrew, 2017) as one approach to fact-checking the information they get from AI.",
+    "description": "In this lesson, we\u2019ll introduce students to the skill of lateral reading (Wineburg & McGrew, 2017) as one approach to fact-checking the information they get from AI.",
     "link": "https://craft.stanford.edu/resource/how-do-i-fact-check-ai-search-results/",
     "category": "Evaluate AI",
     "keywords": [
@@ -908,5 +908,139 @@
     ],
     "image": "/activity-images/activity-39.jpg",
     "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-40",
+    "name": "AI Voice Studio",
+    "type": "Task Card",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Teacher",
+      "Student"
+    ],
+    "description": "PLAY and TINKER Visit elevenlabs.io to turn text into realistic speech. Pick a voice from the library, paste a short script, and listen back. Try the same line in different voices, accents, or languages \u2014 or clone your own voice and hear it read something you've never said. REFLECT How might you use an AI voice in your own work? Whose voice should \u2014 and shouldn't \u2014 be available to clone?",
+    "link": "https://elevenlabs.io",
+    "category": "Understand AI",
+    "keywords": [
+      "understand",
+      "voice",
+      "studio",
+      "play",
+      "tinker",
+      "visit",
+      "elevenlabs",
+      "turn",
+      "text"
+    ],
+    "image": "/activity-images/activity-40.jpg",
+    "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-41",
+    "name": "Build an AI Agent",
+    "type": "Task Card",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Teacher",
+      "Student"
+    ],
+    "description": "PLAY and TINKER Install your own AI agent from openclaw.ai. Connect it to Telegram (or Discord, Slack, iMessage) and start chatting. Ask it to summarize an email, browse a website, or run a quick task \u2014 then keep texting it as you switch devices. REFLECT What changes when an AI agent lives on your machine instead of someone else's server? Which tasks would you trust an AI agent to do on your behalf - and which wouldn't you?",
+    "link": "https://docs.google.com/document/d/1vwZgTHGy7pREc5WUFd7Gt-Laq3Gcp4Ax/edit",
+    "category": "Shape AI",
+    "keywords": [
+      "shape",
+      "build",
+      "agent",
+      "play",
+      "tinker",
+      "install",
+      "openclaw",
+      "connect",
+      "telegram"
+    ],
+    "image": "/activity-images/activity-41.jpg",
+    "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-42",
+    "name": "Beyond the Slop - UX & UI for Vibe Coding",
+    "type": "Slide Deck",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Teacher",
+      "Student"
+    ],
+    "description": "Use meta-prompting to improve websites and apps generated through vibe coding",
+    "link": "https://docs.google.com/presentation/d/1kB8ZPXAadEJA2ehmCyxGXqJpFcYlMuRa/edit?usp=sharing&ouid=117135721690997337051&rtpof=true&sd=true",
+    "category": "Shape AI",
+    "keywords": [
+      "shape",
+      "beyond",
+      "slop",
+      "vibe",
+      "coding",
+      "meta-prompting",
+      "improve",
+      "websites",
+      "apps"
+    ],
+    "image": "/activity-images/activity-42.jpg",
+    "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-43",
+    "name": "Teach an AI Agent",
+    "type": "Task Card",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Teacher",
+      "Student"
+    ],
+    "description": "PLAY and TINKER In ChatGPT, Claude, or Gemini, write a short prompt that turns the AI into a novice student \u2014 give it a name, a personality, and a topic to learn from you. Then teach it: explain the topic, answer its questions, and tweak the prompt when it falls out of character. REFLECT What did you learn about your own understanding by trying to teach it? What kind of student would push your thinking the hardest \u2014 curious, skeptical, or confused?",
+    "link": "https://docs.google.com/document/d/1C9W9SCb_r8p9yZR0XVVwkudZI34ZsgTt/edit",
+    "category": "Shape AI",
+    "keywords": [
+      "shape",
+      "teach",
+      "agent",
+      "play",
+      "tinker",
+      "chatgpt",
+      "claude",
+      "gemini",
+      "write"
+    ],
+    "image": "/activity-images/activity-43.jpg",
+    "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-44",
+    "name": "Bias in AI design",
+    "type": "Facilitator Instructions",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Student"
+    ],
+    "description": "This lesson introduces students to the concept of bias in AI training data and its societal implications. Using a real-world example of Google\u2019s Gemini AI, students will explore how overrepresentation and underrepresentation in datasets affect various groups.",
+    "link": "https://craft.stanford.edu/resource/how-can-we-mitigate-bias-in-ai-design/",
+    "category": "Evaluate AI",
+    "keywords": [
+      "evaluate",
+      "bias",
+      "design",
+      "lesson",
+      "introduces",
+      "students",
+      "concept",
+      "training",
+      "data"
+    ],
+    "image": "/activity-images/activity-44.jpg",
+    "created_by": "CRAFT"
   }
 ]
