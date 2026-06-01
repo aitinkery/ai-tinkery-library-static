@@ -8,7 +8,7 @@
     "audience": [
       "Teacher"
     ],
-    "description": "Create a custom chatbot using bot101.app",
+    "description": "PLAY and TINKER Go to Build-a-bot at bot101.app to create your own chatbot. Need some inspiration? Click on the Chatbot Gallery to explore examples. Click Try it Out to remix a copy of your own. REFLECT How does the process of building with AI shape your understanding of AI?",
     "link": "https://craft.stanford.edu/resource/how-can-i-build-my-own-chatbot/",
     "category": "Shape AI",
     "keywords": [
@@ -841,7 +841,7 @@
     "audience": [
       "Student"
     ],
-    "description": "Explore ethical considerations around AI use, including issues of bias, fairness, privacy, and responsible deployment of AI systems.",
+    "description": "This gamified lesson effectively introduces students to the ethical challenges of AI. It boosts critical thinking and ethical reasoning through engaging discussions. It also enhances collaborative skills and decision-making, providing a rich learning experience. AI & Society",
     "link": "https://craft.stanford.edu/resource/what-principles-should-guide-ethical-use-of-ai/",
     "category": "Evaluate AI",
     "keywords": [
@@ -913,14 +913,14 @@
     "id": "activity-40",
     "name": "Can You Spot the AI?",
     "type": "Task Card",
-    "time": "20\u201335 min",
+    "time": "30 minutes",
     "time_minutes": 30,
     "audience": [
       "Teacher",
       "Student"
     ],
-    "description": "PLAY and TINKER Your teacher will show you three pairs \u2014 a song, a video, and a photo. In each pair, one was made by a human and one was made by AI. Decide which is AI-generated, write down your evidence (the specific details, patterns, or \"tells\" that gave it away), and share your reasoning before the answer is revealed. REFLECT What \"tells\" did you notice? Which pair was hardest to judge, and why is that type of media easier to fake? How does it feel to know it can be this hard to tell? What skills or habits would help you spot AI-generated content in real life? FOR TEACHERS Present one pair at a time (song \u2192 video \u2192 photo). Give students 2\u20133 minutes per pair to examine and record their guess + evidence. Reveal after each discussion. AI Tinkery provides an example set \u2014 or find your own pairs. Pairs should be stylistically similar and age-appropriate.",
-    "link": "",
+    "description": "PLAY and TINKER Your teacher will show you three pairs \u2014 a song, a video, and a photo. In each pair, one was made by a human and one was made by AI. For each pair: 1. Decide which one is AI-generated. 2. Write down your evidence \u2014 what specific details, patterns, or \"tells\" made you think so. 3. Share your reasoning before the answer is revealed. REFLECT - What details did you look for? What \"tells\" did you notice? - Which pair was hardest to judge? Why do you think that type of media is easier to fake? - How does it feel to know it can be this hard to tell? - What skills or habits would help you spot AI-generated content in real life? FOR TEACHERS Present one pair at a time (song \u2192 video \u2192 photo). Give students 2\u20133 minutes per pair to examine and record their guess + evidence. Reveal after each discussion. AI Tinkery provides an example set \u2014 or find your own pairs. Pairs should be stylistically similar and age-appropriate.",
+    "link": "https://docs.google.com/document/d/1-pC9-DUisexRm1mQpb2_9ADfvDcaHV8FYyAS6Knms-M/edit",
     "category": "Evaluate AI",
     "keywords": [
       "evaluate",
@@ -936,6 +936,157 @@
       "critical thinking"
     ],
     "image": "/activity-images/activity-40.jpg",
-    "created_by": "Tinkery Bot"
+    "created_by": "PLEX"
+  },
+  {
+    "id": "activity-41",
+    "name": "AI Voice Studio",
+    "type": "Task Card",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Teacher",
+      "Student"
+    ],
+    "description": "PLAY and TINKER Visit elevenlabs.io to turn text into realistic speech. Pick a voice from the library, paste a short script, and listen back. Try the same line in different voices, accents, or languages \u2014 or clone your own voice and hear it read something you've never said. REFLECT How might you use an Al voice in your own work? Whose voice should \u2014 and shouldn't \u2014 be available to clone?",
+    "link": "https://elevenlabs.io",
+    "category": "Understand AI",
+    "keywords": [
+      "voice",
+      "elevenlabs",
+      "understand"
+    ],
+    "image": "/activity-images/activity-41.jpg",
+    "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-42",
+    "name": "Build an AI Agent",
+    "type": "Task Card",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Teacher",
+      "Student"
+    ],
+    "description": "PLAY and TINKER Install your own Al agent from openclaw.ai. Connect it to Telegram (or Discord, Slack, iMessage) and start chatting. Ask it to summarize an email, browse a website, or run a quick task \u2014 then keep texting it as you switch devices. REFLECT What changes when an Al agent lives on your machine instead of someone else's server? Which tasks would you trust an Al agent to do on your behalf - and which wouldn't you?",
+    "link": "https://docs.google.com/document/d/1vwZgTHGy7pREc5WUFd7Gt-Laq3Gcp4Ax/edit",
+    "category": "Shape AI",
+    "keywords": [
+      "agent",
+      "build",
+      "UI",
+      "telegram",
+      "shape"
+    ],
+    "image": "/activity-images/activity-42.jpg",
+    "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-43",
+    "name": "Gradiants",
+    "type": "Slide Deck",
+    "time": "30 minutes",
+    "time_minutes": 30,
+    "audience": [
+      "Teacher"
+    ],
+    "description": "Map what aspects of work should/can use AI",
+    "link": "https://www.graidients.ai/v1/",
+    "category": "Evaluate AI",
+    "keywords": [
+      "evaluate"
+    ],
+    "image": "/activity-images/activity-43.jpg",
+    "created_by": "Harvard Center for Digital Thriving"
+  },
+  {
+    "id": "activity-44",
+    "name": "Beyond the Slop - UX & UI for Vibe Coding",
+    "type": "Slide Deck",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Teacher",
+      "Student"
+    ],
+    "description": "Use meta-prompting to improve websites and apps generated through vibe coding",
+    "link": "https://docs.google.com/presentation/d/1kB8ZPXAadEJA2ehmCyxGXqJpFcYlMuRa/edit?usp=sharing&ouid=117135721690997337051&rtpof=true&sd=true",
+    "category": "Shape AI",
+    "keywords": [
+      "prompt",
+      "vibe code",
+      "UX",
+      "UI",
+      "shape"
+    ],
+    "image": "/activity-images/activity-44.jpg",
+    "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-45",
+    "name": "Evaluate AI Tools for the Classroom",
+    "type": "Task Card",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Teacher"
+    ],
+    "description": "PLAY and TINKER Pick an AI tool you'd use in your classroom and build a one-page AI Nutrition Label for it: who made it, what student data it collects, how it handles privacy, whether the company mitigates bias, how well it fits your curriculum, and how easy it is to use. Test it with diverse inputs to see what the label should say. REFLECT What did the evaluation surface that you wouldn't have noticed by just trying the tool? Where do you draw the line - what's a deal-breaker for a tool you'd put in front of students?",
+    "link": "https://docs.google.com/document/d/1JG85EKc59N8tQSRFkugnUzIyNiXQn6Go/edit?usp=sharing&ouid=112419098796256480269&rtpof=true&sd=true",
+    "category": "Evaluate AI",
+    "keywords": [
+      "bias",
+      "evaluate",
+      "build",
+      "classroom",
+      "privacy",
+      "UI",
+      "evaluate"
+    ],
+    "image": "/activity-images/activity-45.jpg",
+    "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-46",
+    "name": "Teach an AI Agent",
+    "type": "Task Card",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Teacher",
+      "Student"
+    ],
+    "description": "PLAY and TINKER In ChatGPT, Claude, or Gemini, write a short prompt that turns the Al into a novice student \u2014 give it a name, a personality, and a topic to learn from you. Then teach it: explain the topic, answer its questions, and tweak the prompt when it falls out of character. REFLECT What did you learn about your own understanding by trying to teach it? What kind of student would push your thinking the hardest \u2014 curious, skeptical, or confused?",
+    "link": "https://docs.google.com/document/d/1C9W9SCb_r8p9yZR0XVVwkudZI34ZsgTt/edit",
+    "category": "Shape AI",
+    "keywords": [
+      "agent",
+      "prompt",
+      "teach",
+      "shape"
+    ],
+    "image": "/activity-images/activity-46.jpg",
+    "created_by": "AI Tinkery"
+  },
+  {
+    "id": "activity-47",
+    "name": "Bias in AI design",
+    "type": "Facilitator Instructions",
+    "time": "1 hour",
+    "time_minutes": 60,
+    "audience": [
+      "Student"
+    ],
+    "description": "This lesson introduces students to the concept of bias in AI training data and its societal implications. Using a real-world example of Google\u2019s Gemini AI, students will explore how overrepresentation and underrepresentation in datasets affect various groups.",
+    "link": "https://craft.stanford.edu/resource/how-can-we-mitigate-bias-in-ai-design/",
+    "category": "Evaluate AI",
+    "keywords": [
+      "bias",
+      "design",
+      "evaluate"
+    ],
+    "image": "/activity-images/activity-47.jpg",
+    "created_by": "CRAFT"
   }
 ]
