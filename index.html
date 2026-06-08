@@ -148,6 +148,52 @@
 
   /* ---------- Grid ---------- */
   main.grid-wrap { max-width: 1200px; margin: 0 auto; padding: 20px 24px 120px; }
+
+  /* Editorial rows — curated entry points (Start here / 15 min / This week) */
+  .editorial-rows { margin-bottom: 36px; }
+  .editorial-rows[hidden] { display: none; }
+  .edit-row { margin-bottom: 32px; }
+  .edit-row:last-child { margin-bottom: 0; }
+  .edit-row-head {
+    display: flex; flex-direction: column; gap: 4px;
+    margin: 0 0 14px;
+  }
+  .edit-row-head h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 22px;
+    color: var(--ink);
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+  .edit-row-head p {
+    font-size: 14px;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .edit-row-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  }
+
+  .browse-all-header {
+    display: flex; flex-direction: column; gap: 4px;
+    margin: 0 0 16px;
+    padding-top: 8px;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  .browse-all-header[hidden] { display: none; }
+  .browse-all-header h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 20px;
+    color: var(--ink);
+    margin: 0;
+  }
+  .browse-all-header p {
+    font-size: 13px;
+    color: var(--ink-mute);
+    margin: 0;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -474,6 +520,12 @@
 </nav>
 
 <main class="grid-wrap">
+  <!-- Editorial rows — hidden once a search/filter is active -->
+  <div id="editorialRows" class="editorial-rows"></div>
+  <div id="browseAllHeader" class="browse-all-header" hidden>
+    <h2>Browse the full library</h2>
+    <p id="browseAllSubtitle">Filter by audience, focus area, time, or creator.</p>
+  </div>
   <div class="grid" id="grid" role="list"></div>
   <div class="empty" id="emptyState" hidden>
     <strong>No activities match — try removing a filter.</strong>
@@ -597,6 +649,7 @@
   }
 
   function render() {
+    updateEditorialVisibility();
     const results = state.activities.filter(matches);
     grid.innerHTML = results.map(cardHtml).join('');
     emptyState.hidden = results.length !== 0;
@@ -1005,6 +1058,63 @@
     if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 
+  // ---------- Editorial rows (curator picks, design-principles pass 2026-06-07) ----------
+  const EDITORIAL_ROWS = [
+    {
+      title: 'Start here',
+      blurb: 'Four activities that introduce what the Tinkery actually does.',
+      ids: ['activity-01','activity-02','activity-11','activity-05']
+    },
+    {
+      title: '15 minutes or less',
+      blurb: 'Drop-in activities for a workshop opener, a faculty meeting, or a single class period.',
+      ids: ['activity-11','activity-27','activity-28','activity-32']
+    },
+    {
+      title: 'This week',
+      blurb: 'Newest additions to the library.',
+      ids: ['activity-46','activity-47','activity-45','activity-44']
+    }
+  ];
+
+  function renderEditorialRows() {
+    const container = document.getElementById('editorialRows');
+    if (!container) return;
+    if (!state.activities.length) { container.innerHTML = ''; return; }
+    const html = EDITORIAL_ROWS.map(row => {
+      const cards = row.ids
+        .map(id => state.byId.get(id))
+        .filter(Boolean)
+        .map(cardHtml)
+        .join('');
+      if (!cards) return '';
+      return `
+        <section class="edit-row">
+          <div class="edit-row-head">
+            <h2>${esc(row.title)}</h2>
+            <p>${esc(row.blurb)}</p>
+          </div>
+          <div class="grid edit-row-grid">${cards}</div>
+        </section>
+      `;
+    }).join('');
+    container.innerHTML = html;
+  }
+
+  function updateEditorialVisibility() {
+    const container = document.getElementById('editorialRows');
+    const browseHeader = document.getElementById('browseAllHeader');
+    const subtitle = document.getElementById('browseAllSubtitle');
+    if (!container || !browseHeader) return;
+    const f = state.filters;
+    const isFiltering = f.audience !== 'all' || f.category !== 'all' || f.time !== 'all' || f.creator !== 'all' || (f.search && f.search.trim());
+    container.hidden = !!isFiltering;
+    browseHeader.hidden = !!isFiltering;
+    if (subtitle && state.activities.length) {
+      subtitle.textContent = `${state.activities.length} activities. Filter by audience, focus area, time, or creator.`;
+    }
+  }
+
   // ---------- Boot ----------
   async function boot() {
     updateSavedCount();
@@ -1014,6 +1124,7 @@
       state.activities = Array.isArray(data) ? data : [];
       state.byId = new Map(state.activities.map(a => [a.id, a]));
       renderCreatorChips();
+      renderEditorialRows();
     } catch (err) {
       grid.innerHTML = `<div class="empty"><strong>Couldn't load activities.</strong>
         <span>Refresh to try again.</span></div>`;
