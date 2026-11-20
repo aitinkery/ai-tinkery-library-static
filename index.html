@@ -7,7 +7,7 @@
 
 <!-- PWA -->
 <link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#c7520a">
+<meta name="theme-color" content="#E1633B">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="AI Tinkery">
@@ -19,15 +19,15 @@
 
 <style>
   :root {
-    --brand: #c7520a;
-    --brand-dark: #a34308;
+    --brand: #E1633B;
+    --brand-dark: #C14E2B;
     --ink: #191d19;
     --ink-soft: #474747;
     --ink-mute: #787878;
     --bg: #f7f7f7;
     --card: #ffffff;
     --line: rgba(26,29,25,0.10);
-    --highlight: rgba(199,82,10,0.14);
+    --highlight: rgba(225,99,59,0.14);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -125,7 +125,7 @@
   .chip[aria-pressed="true"] {
     background: var(--brand); border-color: var(--brand); color: #fff;
   }
-  .chip:focus-visible { outline: 3px solid rgba(199,82,10,0.35); outline-offset: 2px; }
+  .chip:focus-visible { outline: 3px solid rgba(225,99,59,0.35); outline-offset: 2px; }
 
   .search-row { display: flex; gap: 10px; align-items: center; }
   .search-row input[type="search"] {
@@ -136,7 +136,7 @@
   }
   .search-row input[type="search"]:focus {
     outline: none; border-color: var(--brand);
-    box-shadow: 0 0 0 3px rgba(199,82,10,0.15);
+    box-shadow: 0 0 0 3px rgba(225,99,59,0.15);
   }
   .result-count { font-size: 13px; color: var(--ink-mute); }
   .clear-btn {
@@ -208,9 +208,9 @@
     transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
     position: relative;
   }
-  .card:hover { border-color: rgba(199,82,10,0.5); box-shadow: 0 6px 18px rgba(199,82,10,0.10); }
+  .card:hover { border-color: rgba(225,99,59,0.5); box-shadow: 0 6px 18px rgba(225,99,59,0.10); }
   .card.is-highlighted {
-    border-color: var(--brand); box-shadow: 0 6px 22px rgba(199,82,10,0.28);
+    border-color: var(--brand); box-shadow: 0 6px 22px rgba(225,99,59,0.28);
     transform: translateY(-2px);
   }
   .card.is-highlighted::after {
@@ -250,15 +250,15 @@
     overflow-y: auto;
     /* Subtle scrollbar so it doesn't fight the brand */
     scrollbar-width: thin;
-    scrollbar-color: rgba(199, 82, 10, 0.4) transparent;
+    scrollbar-color: rgba(225, 99, 59, 0.4) transparent;
   }
   .card p.desc::-webkit-scrollbar { width: 5px; }
   .card p.desc::-webkit-scrollbar-track { background: transparent; }
   .card p.desc::-webkit-scrollbar-thumb {
-    background: rgba(199, 82, 10, 0.4);
+    background: rgba(225, 99, 59, 0.4);
     border-radius: 4px;
   }
-  .card p.desc::-webkit-scrollbar-thumb:hover { background: rgba(199, 82, 10, 0.6); }
+  .card p.desc::-webkit-scrollbar-thumb:hover { background: rgba(225, 99, 59, 0.6); }
 
   /* Toast notifications for ephemeral feedback (link copied, etc.) */
   .toast {
@@ -359,7 +359,7 @@
     background: var(--brand); color: #fff; border: none;
     padding: 14px 20px; border-radius: 9999px;
     font-family: inherit; font-size: 15px; font-weight: 700;
-    cursor: pointer; box-shadow: 0 6px 18px rgba(199,82,10,0.38);
+    cursor: pointer; box-shadow: 0 6px 18px rgba(225,99,59,0.38);
     display: inline-flex; align-items: center; gap: 8px;
     transition: background 0.15s, transform 0.15s;
   }
